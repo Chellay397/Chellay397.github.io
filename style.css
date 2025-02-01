@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #EFE9E1;
+    color: black;
+}
+
+/* Header/Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #C3AB99;
+    padding: 1rem;
+}
+
+.menu .menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list .menu-list-items {
+    padding: 0.5rem 1rem;
+}
+
+.menu-list .menu-list-items a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Hero Section with About Me merged */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EFE9E1;
+    padding: 0 2rem;
+}
+
+.hero .intro {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Vertically center the items */
+    width: 100%;
+}
+
+.left-side {
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+    width: 40%;
+}
+
+.profile-picture {
+    width: 300px; /* Resize image */
+    height: 400px; /* Ensure it's not too big */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.right-side {
+    width: 55%;
+    padding: 2rem;
+}
+
+.right-side h3,
+.right-side h1 {
+    margin: 0;
+}
+
+.right-side h4 {
+    margin-top: 10px;
+}
+
+.right-side p {
+    font-size: 1.1rem;
+}
+
+/* Portfolio Section */
+.portfolio {
+    margin-top: 100px;
+    padding: 2rem;
+}
+
+.my-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.my-col {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.my-card {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.my-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Equalize image sizes */
+.my-row img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #C3AB99;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .hero .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-side {
+        width: 100%;
+    }
+
+    .right-side {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .right-side h3,
+    .right-side h1 {
+        font-size: 1.8rem;
+    }
+
+    .right-side p {
+        font-size: 1rem;
+    }
+}

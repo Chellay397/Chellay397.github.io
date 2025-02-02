@@ -4,41 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Marchelle D. Atienza</title>
+    <title>Portfolio - Marchelle D. Atienza</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <!-- Navbar header section -->
+    <!-- Navbar Section -->
     <header class="header">
         <nav class="navbar">
-         <div class="logo">
-            <h2 class="logo-heading">Portfolio</h2>
-        </div>
-            <div class="menu">
-                <ul class="menu-list">
-                    <li class="menu-list-items"><a class="links" href="#home">Home</a></li>
-                    <li class="menu-list-items"><a class="links" href="#projects">Key Projects</a></li>
-                    <li class="menu-list-items"><a class="links" href="#assignments">Assignments</a></li>
-                    <li class="menu-list-items"><a class="links" href="#certifications">Certifications</a></li>
-                </ul>
+            <div class="logo">
+                <h2>Portfolio</h2>
             </div>
+            <ul class="menu-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Main hero banner with about section merged -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="intro">
-            <div class="left-side">
-                <img src="Mypic.jpg" alt="Marchelle D. Atienza" class="profile-picture">
+        <div class="hero-content">
+            <!-- Centered Picture -->
+            <div class="hero-center">
+                <img src="Mypic.jpg" alt="Marchelle's Picture" class="profile-picture">
             </div>
-            <div class="right-side">
-                <h3 class="greet-heading">Hello, I'm</h3>
-                <h1 class="my-heading">Marchelle D. Atienza</h1>
-                <h4 class="sub-heading">A BS Information Systems Student with a passion for technology, problem-solving, and innovation.</h4>
-                <p class="lead-para">I am a second-year BS Information System student with a passion for technology and problem-solving. I am eager to explore the intersection of business and technology, leveraging data and system analysis to improve efficiency and decision-making.</p>
+            <!-- Description below the picture -->
+            <div class="hero-description">
+                <h1>Hello, I'm Marchelle D. Atienza</h1>
+                <h3>A passionate student exploring the intersection of technology and business.</h3>
                 <p><strong>Mission:</strong> To leverage technology and information systems to create innovative solutions that improve efficiency, enhance decision-making, and drive digital transformation.</p>
                 <p><strong>Vision:</strong> To become a skilled and forward-thinking IT professional, contributing to the advancement of technology and making a meaningful impact in the digital world.</p>
             </div>
@@ -46,87 +43,78 @@
     </section>
 
     <!-- Key Projects Section -->
-    <section class="portfolio" id="projects">
-        <div class="portfolio-heading">
-            <h1 class="my-heading text-center">Key Projects</h1>
+    <section id="projects" class="portfolio">
+        <div class="section-header">
+            <h2>Key Projects</h2>
         </div>
-        <div class="portfolio-content">
-            <div class="my-row">
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <a href="../AtienzaExplorePHTours.html"><img src="project1.jpg" alt="Explore PH Tours"></a>
-                        </div>
-                        <h3 class="greet-heading blue-text">Explore PH Tours</h3>
-                        <p class="small-para blue-text">Web development project showcasing Philippine tourism.</p>
-                    </div>
+        <div class="project-cards">
+            <div class="card">
+                <img src="Explore.png" alt="Explore PH Tours">
+                <div class="card-content">
+                    <h3>Explore PH Tours</h3>
+                    <p>A web development project showcasing Philippine tourism.</p>
+                    <a href="../AtienzaExplorePHTours.html" class="button">Learn More</a>
                 </div>
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <a href="../AtienzaCourseSchedule.html"><img src="project2.jpg" alt="Course Schedule"></a>
-                        </div>
-                        <h3 class="greet-heading blue-text">Course Schedule</h3>
-                        <p class="small-para blue-text">Interactive tool for managing academic schedules.</p>
-                    </div>
+            </div>
+            <div class="card">
+                <img src="Sched.png" alt="Course Schedule">
+                <div class="card-content">
+                    <h3>Course Schedule</h3>
+                    <p>Interactive tool for managing academic schedules.</p>
+                    <a href="../AtienzaCourseSchedule.html" class="button">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Assignments Section -->
-    <section id="assignments" class="portfolio">
-        <h2 class="my-heading text-center">Assignments</h2>
-        <div class="my-row">
-            <!-- Assignment 1 -->
-            <div class="my-col">
-                <img src="W2 HTML TASK.png" alt="HTML Task 1">
-                <p>On this task, we learners will use our HTML knowledge from CodeChum to create a one-page responsive landing page for a travel and tours business called Explore PH Tours.</p>
+    <section id="assignments" class="assignments">
+        <div class="section-header">
+            <h2>Assignments</h2>
+        </div>
+        <div class="assignment-cards">
+            <div class="card">
+                <img src="W2 HTML TASK.png" alt="HTML Task">
+                <p>We created a responsive landing page for Explore PH Tours.</p>
             </div>
-            <!-- Assignment 2 -->
-            <div class="my-col">
-                <img src="W3 HTML TASK.png" alt="HTML Task 2">
-                <p>We will create a single HTML page to display our 2nd Term course schedule using HTML tables.</p>
+            <div class="card">
+                <img src="W3 HTML TASK.png" alt="Course Schedule Task">
+                <p>Developed a page displaying a 2nd term course schedule using HTML tables.</p>
             </div>
-            <!-- Assignment 3 -->
-            <div class="my-col">
+            <div class="card">
                 <img src="W4 CSS3.png" alt="CSS Task">
-                <p>We are tasked to follow the example on the projector.</p>
+                <p>Followed a project example to create a layout using CSS3.</p>
             </div>
-            <!-- Assignment 4 -->
-            <div class="my-col">
+            <div class="card">
                 <img src="W5 JS.png" alt="JavaScript Task">
-                <p>We are tasked to follow the example on the projector.</p>
+                <p>Implemented JavaScript functions for interactive web pages.</p>
             </div>
         </div>
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="portfolio">
-        <h2 class="my-heading text-center">Certifications</h2>
-        <div class="my-row">
-            <!-- Certification 1 -->
-            <div class="my-col">
+    <section id="certifications" class="certifications">
+        <div class="section-header">
+            <h2>Certifications</h2>
+        </div>
+        <div class="certification-cards">
+            <div class="card">
                 <img src="Certiport microsoft specialist.jpeg" alt="Certiport Microsoft Specialist">
-                <p>Microsoft Specialist - Certiport</p>
+                <p>Certiport Microsoft Specialist</p>
             </div>
-            <!-- Certification 2 -->
-            <div class="my-col">
-                <img src="Coursera.png" alt="Coursera Certification">
+            <div class="card">
+                <img src="Coursera.png" alt="Coursera">
                 <p>Coursera Certification</p>
             </div>
-            <!-- Certification 3 -->
-            <div class="my-col">
+            <div class="card">
                 <img src="Java Cert.png" alt="Java Certification">
                 <p>Java Certification</p>
             </div>
-            <!-- Certification 4 -->
-            <div class="my-col">
-                <img src="Linkedin.png" alt="LinkedIn Certification">
+            <div class="card">
+                <img src="Linkedin.png" alt="LinkedIn">
                 <p>LinkedIn Certification</p>
             </div>
-            <!-- Certification 5 -->
-            <div class="my-col">
+            <div class="card">
                 <img src="Python cert.jpeg" alt="Python Certification">
                 <p>Python Certification</p>
             </div>
@@ -138,7 +126,6 @@
         <p>&copy; 2025 Marchelle D. Atienza. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 
 </html>
